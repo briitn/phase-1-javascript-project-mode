@@ -33,8 +33,11 @@ function renderHouses(houses) {
 
         
   
-    })
-   }
+    });
+     let test=document.querySelectorAll('.buyer')
+    test.forEach(item=>{item.addEventListener('click',(e)=>{let subMoney=document.querySelector('.wallet')
+ subMoney.innerHTML-=25})})}
+   
      
  
      
