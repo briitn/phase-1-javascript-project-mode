@@ -37,10 +37,11 @@
   
   
 }); 
+const getBuyer=document.querySelectorAll('.buyer')
+getBuyer.forEach(item=>{
+   
+  item.addEventListener('click',(e)=>{
 
-
-
-
-}
+})})}
 
    
