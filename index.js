@@ -42,13 +42,21 @@ getBuyer.forEach(item=>{
    
   item.addEventListener('click',(e)=>{const pricer=item.previousElementSibling.textContent
 const rePrice=pricer.replace( /^\D+/g, '')
+if (count<=5){
+  if(item.previousElementSibling.previousElementSibling.textContent!=='owned (5/5 houses'){
 if (money.textContent>0){
   if (confirm(`Are you sure you want to buy ${header.textContent} for ${pricer}?`)===true){fetch('http://localhost:3000/wallet',{method:"PATCH",
 headers:{'Content-type':"application/json",
 Accept:'application/json'},
 body:JSON.stringify({
   holdMoney:money.textContent-rePrice})})}
+  function createH6(house){
+    getH6.innerHTML=house.isBought;
+  geth7.innerHTML=house.owned}
+}}else {alert('sorry you dont have enough money')}}
+else {alert("you own all houses")}}
 
-}})})}
+
+)})}
 
    
