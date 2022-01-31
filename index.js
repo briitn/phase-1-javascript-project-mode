@@ -40,7 +40,9 @@
 const getBuyer=document.querySelectorAll('.buyer')
 getBuyer.forEach(item=>{
    
-  item.addEventListener('click',(e)=>{
+  item.addEventListener('click',(e)=>{const pricer=item.previousElementSibling.textContent
+    const rePrice=pricer.replace( /^\D+/g, '')
+    
 
 })})}
 
