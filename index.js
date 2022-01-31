@@ -41,9 +41,10 @@ const getBuyer=document.querySelectorAll('.buyer')
 getBuyer.forEach(item=>{
    
   item.addEventListener('click',(e)=>{const pricer=item.previousElementSibling.textContent
-    const rePrice=pricer.replace( /^\D+/g, '')
-    
+const rePrice=pricer.replace( /^\D+/g, '')
+if (money.textContent>0){
+  if (confirm(`Are you sure you want to buy ${header.textContent} for ${pricer}?`)===true){}
 
-})})}
+}})})}
 
    
