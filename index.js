@@ -100,6 +100,8 @@ item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
       'owned':count,
       'isBought':`owned (${count}/5 houses)` 
     })
+  }).then(res=>res.json())
+  .then(obj=>{createH6(obj)
   })
   }} const getH6=item.previousElementSibling.previousElementSibling.previousElementSibling
   
