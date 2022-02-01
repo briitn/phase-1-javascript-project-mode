@@ -50,6 +50,19 @@ headers:{'Content-type':"application/json",
 Accept:'application/json'},
 body:JSON.stringify({
   holdMoney:money.textContent-rePrice})})}
+  fetch(`http://localhost:3000/houses/${header.id}`,{
+        method:"PATCH",
+        headers:{  "Content-Type": "application/json",
+        Accept: "application/json"
+
+        },
+        body: JSON.stringify({
+          'owned':count,
+          'isBought':`owned (${geth7.innerHTML}/5 houses)`
+        })
+      }).then(res=>res.json())
+      .then(obj=>{createH6(obj)
+      })
   function createH6(house){
     getH6.innerHTML=house.isBought;
   geth7.innerHTML=house.owned}
