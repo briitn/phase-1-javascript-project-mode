@@ -46,6 +46,11 @@ getBuyer.forEach(item=>{
    
   item.addEventListener('click',(e)=>{const pricer=item.previousElementSibling.textContent
 const rePrice=pricer.replace( /^\D+/g, '')
+const getH6=item.previousElementSibling.previousElementSibling
+ const geth7=item.nextElementSibling .nextElementSibling
+
+if(geth7.textContent<=4){
+  count=geth7.innerHTML++}else{geth7.textContent=5}
 if (count<=5){
   if(item.previousElementSibling.previousElementSibling.textContent!=='owned (5/5 houses'){
 if (money.textContent>0){
