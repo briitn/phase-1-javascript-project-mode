@@ -108,7 +108,8 @@ item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
   function createH6(house){
     getH6.innerHTML=house.isBought
    geth7.innerHTML=house.owned}
-
+   const pricer=item.previousElementSibling.previousElementSibling.textContent
+   const rePrice=pricer.replace( /^\D+/g, '')
   
 
 }})})
