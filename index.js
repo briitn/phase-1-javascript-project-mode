@@ -46,13 +46,15 @@
   
 }); 
 const getBuyer=document.querySelectorAll('.buyer')
+let count=0
 getBuyer.forEach(item=>{
-  let count=0
+  
   item.addEventListener('click',(e)=>{const pricer=item.previousElementSibling.textContent
 const rePrice=pricer.replace( /^\D+/g, '')
 const getH6=item.previousElementSibling.previousElementSibling
  const geth7=item.nextElementSibling .nextElementSibling
-
+ const header=
+ item.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling
 if(geth7.textContent<=4){
   count=geth7.innerHTML++}else{geth7.textContent=5}
 if (count<=5){
