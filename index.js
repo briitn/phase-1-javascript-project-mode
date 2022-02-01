@@ -47,7 +47,7 @@
 }); 
 const getBuyer=document.querySelectorAll('.buyer')
 getBuyer.forEach(item=>{
-   
+  let count=0
   item.addEventListener('click',(e)=>{const pricer=item.previousElementSibling.textContent
 const rePrice=pricer.replace( /^\D+/g, '')
 const getH6=item.previousElementSibling.previousElementSibling
