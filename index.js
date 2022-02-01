@@ -58,7 +58,8 @@ if (money.textContent>0){
 headers:{'Content-type':"application/json",
 Accept:'application/json'},
 body:JSON.stringify({
-  holdMoney:money.textContent-rePrice})})}
+  holdMoney:money.textContent-rePrice})})
+  count=geth7.textContent
   fetch(`http://localhost:3000/houses/${header.id}`,{
         method:"PATCH",
         headers:{  "Content-Type": "application/json",
