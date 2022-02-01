@@ -110,7 +110,7 @@ item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
    geth7.innerHTML=house.owned}
    const pricer=item.previousElementSibling.previousElementSibling.textContent
    const rePrice=pricer.replace( /^\D+/g, '')
-  
+   money.innerHTML=parseInt(rePrice)+parseInt(money.textContent)
 
 }})})
 
