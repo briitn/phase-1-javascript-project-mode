@@ -90,9 +90,21 @@ item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
   if (count>0){
   if (confirm(`are you sure you want to sell?`)==true){
     count--
+    {fetch(`http://localhost:3000/houses/${header}`,{
+    method:"PATCH",
+    headers:{  "Content-Type": "application/json",
+    Accept: "application/json"
+
+    },
+    body: JSON.stringify({
+      'owned':count,
+      'isBought':`owned (${count}/5 houses)` 
+    })
+  })
   }}
+
   
 
-})})
+}})})
 
    
