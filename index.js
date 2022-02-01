@@ -80,6 +80,11 @@ body:JSON.stringify({
 else {alert("you own all houses")}}
 
 
-)})}
+})})}
+const getSell2=document.querySelectorAll('.seller')
+getSell2.forEach(item=>{
+item.addEventListener("click",(e)=>{
+
+})})
 
    
