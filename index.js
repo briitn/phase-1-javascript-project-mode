@@ -83,7 +83,9 @@ else {alert("you own all houses")}}
 })})}
 const getSell2=document.querySelectorAll('.seller')
 getSell2.forEach(item=>{
-item.addEventListener("click",(e)=>{
+item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
+
+  let count=geth7.textContent
 
 })})
 
