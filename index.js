@@ -86,7 +86,7 @@ getSell2.forEach(item=>{
 item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
 
   let count=geth7.textContent
-
+  const header=item.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.id
 })})
 
    
