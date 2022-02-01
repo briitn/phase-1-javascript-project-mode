@@ -87,6 +87,10 @@ item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
 
   let count=geth7.textContent
   const header=item.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.id
+  if (count>0){
+  if (confirm(`are you sure you want to sell?`)==true)
+  
+
 })})
 
    
