@@ -4,6 +4,10 @@
   .then(res=>res.json())
   .then(callB=>renderHouses(callB))})
 
+  function renderMoney(wallet){
+    const money=document.querySelector('.wallet')
+    money.textContent=wallet.holdMoney
+   }   
   function renderHouses(houses) {
     const div = document.querySelector('.card');
  
