@@ -112,6 +112,6 @@ item.addEventListener("click",(e)=>{let geth7=item.nextElementSibling
    const rePrice=pricer.replace( /^\D+/g, '')
    money.innerHTML=parseInt(rePrice)+parseInt(money.textContent)
 
-}})})
+}else {alert('you do not own any houses')}})})
 
    
