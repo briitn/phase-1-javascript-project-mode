@@ -3,11 +3,15 @@
   fetch(" http://localhost:3000/houses")
   .then(res=>res.json())
   .then(callB=>renderHouses(callB))})
-
+  const fetchWallet=document.addEventListener("DOMContentLoaded", function(){
+    fetch(" http://localhost:3000/wallet")
+    .then(res=>res.json())
+    .then(callB=>renderMoney(callB))})
   function renderMoney(wallet){
     const money=document.querySelector('.wallet')
     money.textContent=wallet.holdMoney
    }   
+
   function renderHouses(houses) {
     const div = document.querySelector('.card');
  
